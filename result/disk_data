@@ -1,0 +1,274 @@
+HTTP/2 401 
+date: Thu, 21 Mar 2024 03:23:05 GMT
+www-authenticate: Digest realm="MMS Public API", domain="", nonce="BpRZkT7aPaty5/JRCq6LKZ3fYMnFp0jE", algorithm=MD5, qop="auth", stale=false
+content-type: application/json
+content-length: 106
+x-envoy-upstream-service-time: 3
+server: mdbws
+
+HTTP/2 200 
+date: Thu, 21 Mar 2024 03:23:05 GMT
+strict-transport-security: max-age=31536000; includeSubdomains;
+referrer-policy: strict-origin-when-cross-origin
+x-permitted-cross-domain-policies: none
+x-content-type-options: nosniff
+x-mongodb-service-version: gitHash=f108116443af13f76fef4a642d956e6deb32c2c6; versionString=v20240306
+cache-control: no-cache, no-transform, must-revalidate, proxy-revalidate, max-age=0
+content-type: application/vnd.atlas.2023-01-01+json;charset=utf-8
+x-frame-options: DENY
+vary: Accept-Encoding
+content-length: 7146
+x-envoy-upstream-service-time: 58
+server: mdbws
+
+{
+  "end" : "2024-03-21T02:22:06Z",
+  "granularity" : "PT1H",
+  "groupId" : "65f78532fa810d6773ffe85e",
+  "hostId" : "atlas-n5q3az-shard-00-02.5ckgp.mongodb.net:27017",
+  "links" : [ {
+    "href" : "https://cloud.mongodb.com/api/atlas/v2/groups/65f78532fa810d6773ffe85e/processes/atlas-n5q3az-shard-00-02.5ckgp.mongodb.net:27017/disks/data/measurements?granularity=PT1H&start=2024-03-21T00:00:00Z&end=2024-03-21T12:00:00Z&pretty=true",
+    "rel" : "self"
+  }, {
+    "href" : "https://cloud.mongodb.com/api/atlas/v2/groups/65f78532fa810d6773ffe85e/processes/atlas-n5q3az-shard-00-02.5ckgp.mongodb.net:27017",
+    "rel" : "https://cloud.mongodb.com/host"
+  } ],
+  "measurements" : [ {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : null
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 0.2994352118587455
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 0.2999741688910122
+    } ],
+    "name" : "DISK_PARTITION_IOPS_READ",
+    "units" : "SCALAR_PER_SECOND"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : null
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 6.184809301713197
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 6.2208532043074065
+    } ],
+    "name" : "DISK_PARTITION_IOPS_WRITE",
+    "units" : "SCALAR_PER_SECOND"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : null
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 6.484244513571943
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 6.5208273731984185
+    } ],
+    "name" : "DISK_PARTITION_IOPS_TOTAL",
+    "units" : "SCALAR_PER_SECOND"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : null
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 0.5296846011131725
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 0.5342592592592592
+    } ],
+    "name" : "DISK_PARTITION_LATENCY_READ",
+    "units" : "MILLISECONDS"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : null
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 0.8416419653283033
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 0.8423003080769746
+    } ],
+    "name" : "DISK_PARTITION_LATENCY_WRITE",
+    "units" : "MILLISECONDS"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 8936841080
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 8940297695
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 8937977239
+    } ],
+    "name" : "DISK_PARTITION_SPACE_FREE",
+    "units" : "BYTES"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 1695719561
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 1692262945
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 1694583401
+    } ],
+    "name" : "DISK_PARTITION_SPACE_USED",
+    "units" : "BYTES"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 84.05163518039117
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 84.08414488823144
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 84.06232086723372
+    } ],
+    "name" : "DISK_PARTITION_SPACE_PERCENT_FREE",
+    "units" : "PERCENT"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 15.948364819608827
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 15.915855111768565
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 15.937679132766277
+    } ],
+    "name" : "DISK_PARTITION_SPACE_PERCENT_USED",
+    "units" : "PERCENT"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 16.983016983016984
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 3.003003003003003
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 3.0150753768844223
+    } ],
+    "name" : "MAX_DISK_PARTITION_IOPS_READ",
+    "units" : "SCALAR_PER_SECOND"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 92.26190476190476
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 86.0
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 96.90309690309691
+    } ],
+    "name" : "MAX_DISK_PARTITION_IOPS_WRITE",
+    "units" : "SCALAR_PER_SECOND"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 79.0
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 81.0
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 94.0
+    } ],
+    "name" : "MAX_DISK_PARTITION_IOPS_TOTAL",
+    "units" : "SCALAR_PER_SECOND"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 1.0
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 1.0
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 2.3333333333333335
+    } ],
+    "name" : "MAX_DISK_PARTITION_LATENCY_READ",
+    "units" : "MILLISECONDS"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 7.0
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 6.333333333333333
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 6.0
+    } ],
+    "name" : "MAX_DISK_PARTITION_LATENCY_WRITE",
+    "units" : "MILLISECONDS"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 8949702656
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 8948322304
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 8945397760
+    } ],
+    "name" : "MAX_DISK_PARTITION_SPACE_FREE",
+    "units" : "BYTES"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 1707806720
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 1693921280
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 1696108544
+    } ],
+    "name" : "MAX_DISK_PARTITION_SPACE_USED",
+    "units" : "BYTES"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 84.1725992357002
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 84.15961692554241
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 84.13211137820512
+    } ],
+    "name" : "MAX_DISK_PARTITION_SPACE_PERCENT_FREE",
+    "units" : "PERCENT"
+  }, {
+    "dataPoints" : [ {
+      "timestamp" : "2024-03-21T00:22:06Z",
+      "value" : 16.0620454265286
+    }, {
+      "timestamp" : "2024-03-21T01:22:06Z",
+      "value" : 15.931451861439843
+    }, {
+      "timestamp" : "2024-03-21T02:22:06Z",
+      "value" : 15.952023237179487
+    } ],
+    "name" : "MAX_DISK_PARTITION_SPACE_PERCENT_USED",
+    "units" : "PERCENT"
+  } ],
+  "partitionName" : "data",
+  "processId" : "atlas-n5q3az-shard-00-02.5ckgp.mongodb.net:27017",
+  "start" : "2024-03-21T00:22:06Z"
+}

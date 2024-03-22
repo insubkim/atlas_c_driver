@@ -1,0 +1,26 @@
+HTTP/2 401 
+date: Thu, 21 Mar 2024 03:18:42 GMT
+www-authenticate: Digest realm="MMS Public API", domain="", nonce="uJqn0grqZ4Iua2HCUfIUEK2emQOP2FMe", algorithm=MD5, qop="auth", stale=false
+content-type: application/json
+content-length: 106
+x-envoy-upstream-service-time: 1
+server: mdbws
+
+HTTP/2 404 
+date: Thu, 21 Mar 2024 03:18:42 GMT
+strict-transport-security: max-age=31536000; includeSubdomains;
+referrer-policy: strict-origin-when-cross-origin
+x-permitted-cross-domain-policies: none
+x-content-type-options: nosniff
+content-type: application/json
+content-length: 391
+x-envoy-upstream-service-time: 7
+server: mdbws
+
+{
+  "detail" : "Cannot find resource /api/atlas/v2/groups/65f78532fa810d6773ffe85e/processes/atlas-n5q3az-shard-00-02.5ckgp.mongodb.net:27017/data/measurements.",
+  "error" : 404,
+  "errorCode" : "RESOURCE_NOT_FOUND",
+  "parameters" : [ "/api/atlas/v2/groups/65f78532fa810d6773ffe85e/processes/atlas-n5q3az-shard-00-02.5ckgp.mongodb.net:27017/data/measurements" ],
+  "reason" : "Not Found"
+}

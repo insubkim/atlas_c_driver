@@ -1,0 +1,23 @@
+HTTP/2 401 
+date: Thu, 21 Mar 2024 03:17:29 GMT
+www-authenticate: Digest realm="MMS Public API", domain="", nonce="wSUATz8A/prtiplIjFQDS6KeUlLAwD96", algorithm=MD5, qop="auth", stale=false
+content-type: application/json
+content-length: 106
+x-envoy-upstream-service-time: 2
+server: mdbws
+
+HTTP/2 200 
+date: Thu, 21 Mar 2024 03:17:29 GMT
+strict-transport-security: max-age=31536000; includeSubdomains;
+referrer-policy: strict-origin-when-cross-origin
+x-permitted-cross-domain-policies: none
+x-content-type-options: nosniff
+x-mongodb-service-version: gitHash=f108116443af13f76fef4a642d956e6deb32c2c6; versionString=v20240306
+content-type: application/vnd.atlas.2023-01-01+json;charset=utf-8
+x-frame-options: DENY
+vary: Accept-Encoding
+content-length: 425
+x-envoy-upstream-service-time: 29
+server: mdbws
+
+{"links":[{"href":"https://cloud.mongodb.com/api/atlas/v2/groups/65f78532fa810d6773ffe85e/processes/atlas-n5q3az-shard-00-02.5ckgp.mongodb.net:27017/disks?pageNum=1&itemsPerPage=100","rel":"self"}],"results":[{"links":[{"href":"https://cloud.mongodb.com/api/atlas/v2/groups/65f78532fa810d6773ffe85e/processes/atlas-n5q3az-shard-00-02.5ckgp.mongodb.net:27017/disks/data","rel":"self"}],"partitionName":"data"}],"totalCount":1}

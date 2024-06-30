@@ -149,9 +149,31 @@ worker (void *data)
          // PARSE_BSON_UTF(&reply, repl.tags.availabilityZone, serverStatus);
          // PARSE_BSON_UTF(&reply, repl.tags.region, serverStatus);
       }
+      
       bson_destroy (&ping);
       bson_destroy (&reply);
       
+      // dbstats
+      bson_t ping2 = BSON_INITIALIZER;
+      BSON_APPEND_INT32 (&ping2, "dbStats", 1);
+      r = mongoc_client_command_simple (client, "admin", &ping2, NULL, &reply, &error);
+      if (!r) {
+         fprintf (stderr, "ERROR!!! %s\n", error.message);
+      }
+      bson_destroy (&ping2);
+      bson_destroy (&reply);
+      
+      // top
+      bson_t ping3 = BSON_INITIALIZER;
+      BSON_APPEND_INT32 (&ping3, "top", 1);
+      r = mongoc_client_command_simple (client, "admin", &ping3, NULL, &reply, &error);
+      if (!r) {
+         fprintf (stderr, "ERROR!!! %s\n", error.message);
+      }
+      bson_destroy (&ping3);
+      bson_destroy (&reply);
+      
+
       mongoc_client_pool_push (pool, client);
       b = clock();
       printf("%lf\n", (double)(b - a) / CLOCKS_PER_SEC);
